@@ -33,7 +33,7 @@ __author__ = "Noah Van Camp"
 
 __email__ = "noahvc619@gmail.com"
 
-__version__ = "1.0.1"
+__version__ = "1.0.2"
 
 import io
 import chess
@@ -263,7 +263,7 @@ class ChessBot:
             else:
                 print("We lost!")
             return False
-        elif any(word in text.lower() for text in self.moves for word in ["draw", "aborted"]):
+        elif any(word in self.moves[-1].lower() for word in ["draw", "aborted"]):
             self.flag = True
             print("It's a draw!")
             return False
