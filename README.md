@@ -18,7 +18,7 @@ If you haven't already downloaded **Stockfish**, download it [here.](https://sto
 # 🔧 How to setup?
 **All you have to do is add your stockfish path on line 58.**
 
-**After this is done you can run the script:**
+After this is done you can run the script:
 
 ```\ChessBot> py ChessBot.py```
 
