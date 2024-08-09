@@ -2,6 +2,8 @@
 A script that automatically determines and plays the best move, using stockfish.
 ⚠️**This tool only serves for educational purposes.**
 
+**This program is NOT perfect and was only made to fullfil my needs, I'd be impressed if it runs first try on another computer.**
+
 # 📥 How to download?
 To download, run the following in your terminal of choice:
 
