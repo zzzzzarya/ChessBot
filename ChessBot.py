@@ -65,8 +65,6 @@ class ChessBot:
         'clock': '//*[@id="main-wrap"]/main/div[1]/div[7]'
     }
     # Tweak these settings as you see fit
-    BROWSER_OFFSET_X = 26
-    BROWSER_OFFSET_Y = 148
     DRAG_DURATION_SHORT = 0
     DRAG_DURATION_LONG = 0.3
 
