@@ -321,10 +321,8 @@ class ChessBot:
         """Calculates and stores the board coordinates for each square."""
         element = self.wait_for_element('board')
         element_x, element_y = element.location.values()
-        driver_x, _ = self.driver.get_window_position().values()
         height, width = element.size.values()
-        corrected_x, corrected_y = [a + b for a, b in zip((element_x, element_y), [self.driver.execute_script(f'return window.outer{word} - window.inner{word};') for word in ["Width", "Height"]])]
-        abs_x, abs_y = corrected_x + driver_x, corrected_y
+        abs_x, abs_y = [a + b for a, b in zip((element_x, element_y), [self.driver.execute_script(f'return window.outer{word} - window.inner{word};') for word in ["Width", "Height"]])]
         files = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
         ranks = [1, 2, 3, 4, 5, 6, 7, 8]
         self.positions = self.calculate_positions(files, ranks, abs_x, abs_y, width, height)
