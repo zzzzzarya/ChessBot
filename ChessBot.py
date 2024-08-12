@@ -33,7 +33,7 @@ __author__ = "Noah Van Camp"
 
 __email__ = "noahvc619@gmail.com"
 
-__version__ = "1.0.2"
+__version__ = "1.0.3"
 
 import io
 import chess
